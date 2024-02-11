@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width,
+              user-scalable=no,
+              initial-scale=1.0,
+              maximum-scale=1.0,
+              minimum-scale=1.0"
+        >
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Canvas stripe generator</title>
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
+    <body>
+        <div class="config">
+            <p class="range-slider_info">
+                Define the gap between black stripes ( 0 - 100 )
+            </p>
+            <div class="range-slider">
+                <input type="range" min="0" max="100" value="10" class="range-slider_input" id="slider_input">
+                <div id="slider_thumb" class="range-slider_thumb"></div>
+            </div>
+        </div>
+
+        <div id="container" class="canvas-container"></div>
+        <div class="loader" id="loader"></div>
+
+        <script src="scripts/stripe-generator.js"></script>
+    </body>
+</html>
